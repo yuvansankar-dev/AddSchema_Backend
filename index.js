@@ -5,13 +5,7 @@ import cors from "cors";
 const app = express();
 const port = 3000;
 
-const corsOptions = {
-  origin: "*",
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"],
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 app.post("/sendData", async (req, res) => {
