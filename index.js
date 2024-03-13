@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 const corsOptions = {
-  origin: "http://127.0.0.1:5173",
+  origin: "*",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
   credentials: true,
